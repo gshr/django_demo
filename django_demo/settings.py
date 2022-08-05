@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rug07-ic^je^&7!s(-$0)8x0v=38lir#g)4i#1j#w^ys-fg(g!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -100,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
